@@ -25,3 +25,19 @@ pip install datasets
 pip install huggingface-hub
 pip install joblib
 pip install librosa
+## Configuration
+
+Define variables such as:
+
+- `MAX_DURATION`: Maximum duration of input audio files (in seconds).
+- `SAMPLING_RATE`: Number of samples of audio recorded every second.
+- ...
+
+## Data Processing
+
+### Load the Google Speech Commands Dataset
+
+```python
+from datasets import load_dataset
+
+speech_commands_v1 = load_dataset("superb", "ks")
